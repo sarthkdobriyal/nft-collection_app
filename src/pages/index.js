@@ -204,7 +204,7 @@ export default function Home() {
       setInterval(async () =>{
         
        const presaleStarted =  await checkIfPresaleStarted()
-       if(preSaleStarted){
+       if(presaleStarted){
         await checkIfPresaleEnded();
        }
       
