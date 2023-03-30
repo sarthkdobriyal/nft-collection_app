@@ -309,7 +309,7 @@ export default function Home() {
     if(!presaleStarted){
       //presale hasn't started yet
       return (
-        <h2 className={styles.description} >Presale hasn't started yet! Come back later</h2>
+        <h2 className={styles.description} >Presale hasn&apos;t started yet! Come back later</h2>
       )
     }
 
@@ -317,7 +317,7 @@ export default function Home() {
       //allow users to mint in presale if whitelist
       return (
         <div>
-          <span className={styles.description}>Presale! If you're whitelisted you can mint a <span className={styles.logo}> srtk </span> noww. </span>
+          <span className={styles.description}>Presale! If you&apos;re whitelisted you can mint a <span className={styles.logo}> srtk </span> noww. </span>
         <button className={styles.button} onClick={presaleMint}> 
           Presale Mint ⚡
         </button>
