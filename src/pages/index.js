@@ -228,7 +228,7 @@ export default function Home() {
   const presaleMint = async () => {
     setLoading(true)
     try {
-      const signer = await getSignerOrProvider(true);
+      const signer = await getProviderOrSigner(true);
   
       const nftContract = new ethers.Contract(
         NFT_CONTRACT_ADDRESS,
@@ -251,7 +251,7 @@ export default function Home() {
   const publicMint = async() => {
     setLoading(true)
     try {
-      const signer = await getSignerOrProvider(true);
+      const signer = await getProviderOrSigner(true);
   
       const nftContract = new ethers.Contract(
         NFT_CONTRACT_ADDRESS,
